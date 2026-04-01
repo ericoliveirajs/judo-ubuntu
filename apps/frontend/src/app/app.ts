@@ -1,13 +1,15 @@
+// Exemplo de como deve ficar o seu app.ts
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { NxWelcome } from './nx-welcome';
+import { RouterOutlet } from '@angular/router';
+import { Hero } from './components/hero'; // Ajuste o nome da classe se necessário
 
 @Component({
-  imports: [NxWelcome, RouterModule],
+  standalone: true,
+  imports: [RouterOutlet, Hero], // Adicione aqui!
   selector: 'app-root',
   templateUrl: './app.html',
-  styleUrl: './app.scss',
+  styleUrls: ['./app.scss'],
 })
 export class App {
-  protected title = 'frontend';
+  title = 'frontend';
 }
