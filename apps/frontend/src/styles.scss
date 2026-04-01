@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================================
+PALETA DE CORES - JUDÔ UBUNTU
+========================================= */
+:root {
+  --color-torii-black: #121212; /* Fundo principal escuro */
+  --color-ubuntu-gold: #c8a145; /* Dourado das mãos e textos do logo */
+  --color-kimono-white: #f9f8f4; /* Fundo do patch do logo */
+  --color-pure-white: #ffffff; /* Textos de alto contraste */
+}
+
+/* Reset básico para não termos bordas brancas indesejadas */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--color-torii-black);
+  color: var(--color-kimono-white);
+  font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
