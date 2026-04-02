@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
+html {
+  scroll-behavior: smooth;
+}
 /* =========================================
 PALETA DE CORES - JUDÔ UBUNTU
 ========================================= */
@@ -27,4 +31,14 @@ body {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+
+/* Ocultar scrollbar mantendo a funcionalidade de scroll (Carrossel) */
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
 }
