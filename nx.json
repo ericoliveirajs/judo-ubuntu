@@ -47,25 +47,6 @@
       }
     }
   },
-  "plugins": [
-    {
-      "plugin": "@nx/eslint/plugin",
-      "options": {
-        "targetName": "lint"
-      }
-    },
-    {
-      "plugin": "@nx/webpack/plugin",
-      "options": {
-        "buildTargetName": "build",
-        "serveTargetName": "serve",
-        "previewTargetName": "preview",
-        "buildDepsTargetName": "build-deps",
-        "watchDepsTargetName": "watch-deps",
-        "serveStaticTargetName": "serve-static"
-      }
-    }
-  ],
   "generators": {
     "@nx/angular:application": {
       "e2eTestRunner": "none",
